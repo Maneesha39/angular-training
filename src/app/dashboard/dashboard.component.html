@@ -1,0 +1,41 @@
+<app-header [title]="'DASHBOARD'"></app-header><br>
+<div class="row" style="padding:30px;background-color: #f48fb1">
+  <div class="col-3">
+    <app-stacks [count]="42" [title]="'Users'" [iconClass]="'fa fa-users'" [color]="'purple'"></app-stacks>
+  </div>
+
+  <div class="col-3">
+    <app-stacks [count]="63" [title]="'Orders'" [iconClass]="'fa fa-cart-plus'" [color]="'green'"></app-stacks>
+  </div>
+
+  <div class="col-3">
+    <app-stacks [count]="56" [title]="'Requests'" [iconClass]="'fa fa-phone'" [color]="'red'"></app-stacks>
+  </div>
+
+  <div class="col-3">
+    <app-stacks [count]="23" [title]="'Delivered'" [iconClass]="'fa fa-truck'" [color]="'blue'"></app-stacks>
+  </div>
+</div><br>
+
+<div class="row">
+  <div class="offset-3">
+
+    <app-analytics [price]='11000' [heading]="'Sold'" class=" text-primary">
+    </app-analytics>
+  </div>
+
+  <div>
+    <app-analytics [price]='2000' [heading]="'Marketing'" style="color: #ff0066"></app-analytics>
+  </div>
+
+  <div>
+    <app-analytics [price]='1000' [heading]="'Logistics'" style="color: #009900"></app-analytics>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-8">
+    <app-usertable [data]="products" [tableHeaders]="tableHeaders"></app-usertable>
+  </div>
+</div>

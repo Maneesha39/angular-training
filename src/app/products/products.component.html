@@ -1,0 +1,100 @@
+<app-header [title]="'PRODUCTS'"></app-header><br>
+
+<button class="btn btn-primary" (click)="navigateToAddProducts()" style="float:right">ADD
+    PRODUCT</button><br><br>
+
+<div class="row">
+    <div class="col-8">
+        <app-usertable [data]="products" [tableHeaders]="tableHeaders"></app-usertable>
+    </div>
+</div>
+<br><br><br>
+
+<div class="row" style="background-color: plum; padding:20px">
+    <div class="col-4">
+        <app-stacks [count]="42" [title]="'TOTAL'" [iconClass]="'fa fa-layer-group'" [color]="'purple'">
+        </app-stacks>
+    </div>
+
+    <div class="col-4">
+        <app-stacks [count]="63" [title]="'SOLD'" [iconClass]="'fa fa-truck-moving'" [color]="'green'">
+        </app-stacks>
+    </div>
+
+    <div class="col-4">
+        <app-stacks [count]="56" [title]="'STOCK'" [iconClass]="'fa fa-box-open'" [color]="'blue'"></app-stacks>
+    </div>
+</div><br><br>
+
+<h2 style="margin-left:20px;">SINGLE CARDS</h2>
+
+<div class="row">
+    <div class="col-3">
+        <app-productsdesc [price]="'100'" [code]="'Stars001'" [image]="'assets/img1.jpg'" [color]="'white'"
+            [desc]="'White card with multi-color stars in tree structure'">
+        </app-productsdesc>
+    </div>
+    <div class="col-3">
+        <app-productsdesc [price]="'150'" [code]="'Flowers001'" [image]="'assets/img2.jpg'"
+            [color]="'white with maroon border'" [desc]="'Card with yellow and pink flowers'">
+        </app-productsdesc>
+    </div>
+    <div class="col-3">
+        <app-productsdesc [price]="'80'" [code]="'Flowers002'" [image]="'assets/img3.jpg'" [color]="'white'"
+            [desc]="'White flowers and dotted tapes'">
+        </app-productsdesc>
+    </div>
+    <div class="col-3">
+        <app-productsdesc [price]="'180'" [code]="'Flowers003'" [image]="'assets/img4.jpg'" [color]="'white'"
+            [desc]="'1 big Orange flower and 2 blue and 3 white flowers'">
+        </app-productsdesc>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-3">
+        <app-productsdesc [price]="'200'" [code]="'Flowers004'" [image]="'assets/img5.jpg'"
+            [color]="'white, red and green'" [desc]="'Bouquet with Red flowers with Green leaves'">
+        </app-productsdesc>
+    </div>
+    <div class="col-3">
+        <app-productsdesc [code]="'Flowers005'" [image]="'assets/img3.jpg'" [color]="'white'" [desc]="'hi'">
+        </app-productsdesc>
+    </div>
+    <div class="col-3">
+        <app-productsdesc [code]="'Flowers006'" [image]="'assets/img4.jpg'" [color]="'white'" [desc]="'hi'">
+        </app-productsdesc>
+    </div>
+</div><br>
+
+<h2 style="margin-left:20px;">EXPLOSION BOXES</h2>
+
+<div class="row">
+    <div class="col-3">
+        <app-productsdesc [price]="'500'" [code]="'Box001'" [image]="'assets/box1.jpg'" [color]="'white and Red'"
+            [desc]="'Red box with white cap'">
+        </app-productsdesc>
+    </div>
+    <div class="col-3">
+        <app-productsdesc [price]="'150'" [code]="'Box002'" [image]="'assets/box2.jpg'" [color]="'white and Blue'"
+            [desc]="'Box with white flowers with quilling paper'">
+        </app-productsdesc>
+    </div>
+    <div class="col-3">
+        <app-productsdesc [price]="'250'" [code]="'Box003'" [image]="'assets/box3.jpg'" [color]="'Red and Black'"
+            [desc]="'Red and black box with small pockets'">
+        </app-productsdesc>
+    </div>
+    <div class="col-3">
+        <app-productsdesc [price]="'500'" [code]="'Box004'" [image]="'assets/box4.jpg'" [color]="'Light Blue'"
+            [desc]="'Blue box with white lace border '">
+        </app-productsdesc>
+    </div>
+</div><br>
+
+
+
+<div class="embed-responsive embed-responsive-16by9" style="height:200px; width:400px;">
+    <video autoplay loop class="embed-responsive-item">
+        <source src="assets/boxvideo.mp4" type="video/mp4">
+    </video>
+</div>

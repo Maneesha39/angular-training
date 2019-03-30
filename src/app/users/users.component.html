@@ -1,0 +1,23 @@
+<app-header [title]="'USERS'"></app-header><br>
+
+<div class="row" style="background-color: #f48fb1; padding:20px;">
+    <div class="col-4">
+        <app-stacks [count]="users.length" [title]="'TOTAL'" [iconClass]="'fa fa-users'" [color]="'purple'">
+        </app-stacks>
+    </div>
+
+    <div class="col-4">
+        <app-stacks [count]="getActiveCount()" [title]="'ACTIVE'" [iconClass]="'fa fa-users'" [color]="'green'">
+        </app-stacks>
+    </div>
+
+    <div class="col-4">
+        <app-stacks [count]="getInactiveCount()" [title]="'INACTIVE'" [iconClass]="'fa fa-users'" [color]="'red'">
+        </app-stacks>
+    </div>
+
+</div><br>
+
+<app-usertable [data]="users" [tableHeaders]="tableHeaders"></app-usertable>
+
+<button type="btn btn-primary" (click)="navigateToUser(10)">User</button>

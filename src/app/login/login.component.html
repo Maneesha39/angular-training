@@ -1,0 +1,40 @@
+<div class="total">
+  <div class="parent">
+
+    <div class="child">
+
+      <div class="card text-center">
+        <div class="card-header">LOGIN FORM</div>
+
+      </div>
+      <app-loginalerts [success]="success" [message]="text"></app-loginalerts>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" style="margin-left:20px; margin-top:20px;">Username:</span>
+        </div>
+        <input type=" text" class="form-control" id="user" style="margin-right:20px; margin-top:20px;"
+          [(ngModel)]="username">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" style="margin-left:20px; margin-bottom:10px;">Password:</span>
+        </div>
+        <input type="password" class="form-control" id="pass" style="margin-right:20px; margin-bottom:10px;"
+          [(ngModel)]="password">
+      </div>
+
+
+      <div class="card-footer">
+        <a class="btn btn-info" style="float:left;">Forgot Password?</a>
+        <div>
+          <div class="text-right">
+            <button class="btn btn-success" style="float:right;" (click)="login()">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <a class="btn btn-primary" routerLink="dashboard">Login</a>  // html level routing  -->
